@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import gambar from '../asset/logo.jpg'
+import gambar from '../asset/FOTO.jpg'
 
 import {TypeAnimation} from 'react-type-animation'
 
