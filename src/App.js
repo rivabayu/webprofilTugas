@@ -4,19 +4,20 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Portofolioo1 from './pages/Portofolioo1';
+
+import Projek from './pages/Projek';
 
 
 
 
 function App() {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden bg-[#f8f5f0]'>
       <Router>
         <Header/>
         <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/portofolio/' element={<Portofolioo1/>}/>
+            <Route path='/portofolio/' element={<Projek/>}/>
             <Route path='/contact/' element={<Contact/>}/>
         </Routes>
         <Footer/>
