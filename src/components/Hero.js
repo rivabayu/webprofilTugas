@@ -53,7 +53,7 @@ function Hero() {
             <button
             className="bg-blue-500 py-3 px-4 font-medium rounded-lg text-white hover:scale-110"
           >
-            {!display && "Lihat Portfolio"}
+            {!display && "My Project"}
           </button>
             </Link>
               {!display && (
@@ -63,7 +63,6 @@ function Hero() {
                   className="flex gap-3 items-center py-3 px-4"
                   target='_blank'
                 >
-                  <img src={github} className="w-20" alt=""/>
                   Github
                 </a>
               </button>
