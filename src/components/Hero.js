@@ -47,7 +47,7 @@ function Hero() {
             Riva Bayu Syarifudin
             </span>
             <span className="box-border inline-block w-1 h-10 ml-2 -mb-2 bg-secondary md:-mb-4 md:h-16 animate-cursor will-change-transform"></span> 
-            <p className="py-6 md:px-20 text-black">I'm a web developer enthusiast. Always seeking for a new experience through a case study to solve a problem. Also, learning a new thing like latest popular framework is fun for me</p>
+  
             <div className="md:pl-20">
             <Link to='/portofolio/'>
             <button
