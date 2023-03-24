@@ -52,7 +52,7 @@ function Hero() {
             <button
             className="bg-blue-500 py-3 px-4 font-medium rounded-lg text-white hover:scale-110"
           >
-            {!display && "Lihat Portfolio"}
+            {!display && "My Project"}
           </button>
             </Link>
               {!display && (
