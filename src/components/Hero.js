@@ -4,6 +4,7 @@ import gambar from '../asset/FOTO.jpg'
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion'
 import {fadeIn} from '../Efek'
+import github from '../asset/github.png'
 
 
 
@@ -62,6 +63,7 @@ function Hero() {
                   className="flex gap-3 items-center py-3 px-4"
                   target='_blank'
                 >
+                  <img src={github} className="w-20" alt=""/>
                   Github
                 </a>
               </button>

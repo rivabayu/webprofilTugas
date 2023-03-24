@@ -21,7 +21,7 @@ function EmailJS() {
       
   return (
     <div className='lg:flex-1 lg:pt-32 px-72'>
-    <h1 className='h1'>Contact me</h1>
+    <h1 className='h1 text-xl font-bold'>Contact me</h1>
     <p className='mb-12'>I would love to get suggestions from you.</p>
     {/* form */}
     <form ref={form} className='flex flex-col gap-y-4'onSubmit={sendEmail} >
