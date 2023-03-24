@@ -1,92 +1,84 @@
 import React from 'react'
-import harisenin from '../asset/harisenin.png'
-import webprofil from "../asset/webprofil.png"
 import ecom1 from "../asset/ecom1.png"
-import ecom2 from "../asset/ecom2.png"
 import css3 from "../asset/css3.png"
-import html5 from "../asset/html5.png"
 import reactjjs from "../asset/reactjs.png"
 import tailwindimg from "../asset/tailwindcss.png"
-import bootstap from "../asset/bootstrap.png"
+import nextCom from '../asset/NextCommers.png'
+import foodApp from "../asset/foodApps.png"
+import nodejs from "../asset/nodejs.png"
+import firebase from '../asset/firebase.png'
+
 
 import {motion} from 'framer-motion'
 import {fadeIn} from '../Efek'
+import PageTi from '../components/PageTi'
 
 
 const portofolio = [
     {
-        name : 'Harisenin.com',
-        description : ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        link : 'https://tugas-tailwindcss.vercel.app/',
-        gambar : harisenin,
-        tekno1 : css3,
-        tekno2 : html5,
-        tekno3 : tailwindimg,
-        tekno4 : reactjjs,
-    },
-    {
-        name : 'E-Commers 1',
-        description : ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        name : 'Web Store Clotes',
         link : 'https://ecomlagi.vercel.app/',
-        gambar : ecom2,
-        tekno1 : css3,
-        tekno2 : html5,
-        tekno3 : tailwindimg,
-        tekno4 : reactjjs,
-    },
-    {
-        name : 'E-commers 2',
-        description : ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        link : 'https://ecome-tailwind1.vercel.app/',
         gambar : ecom1,
-        tekno1 : css3,
-        tekno2 : html5,
-        tekno3 : tailwindimg,
-        tekno4 : reactjjs,
+        tekno1 : tailwindimg,
+        tekno2 : reactjjs,
+        tekno3 : css3
     },
     {
-        name : 'Web Portofolio 1',
-        description : ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        link : 'Kunjungi Halaman',
-        gambar : webprofil,
-        tekno1 : css3,
-        tekno2 : html5,
-        tekno3 : bootstap,
-        tekno4 : reactjjs
+        name : 'FoodApps',
+        link : 'https://ecom-coba-rivabayu.vercel.app/',
+        gambar : foodApp,
+        tekno1 : tailwindimg,
+        tekno2 : reactjjs,
+        tekno3 : firebase
+    },
+    
+    {
+        name : 'NextCommerse',
+        link : 'https://next-commerce-client.vercel.app/',
+        gambar : nextCom,
+        tekno1 : tailwindimg,
+        tekno2 : reactjjs,
+        tekno3 : nodejs
     },
     
 ]
 
 function Projek() {
   return (
-    <div className='mt-40 mb-20'>
-        {portofolio.map((portofolio, index) => { 
-            const {name, description, link, gambar, tekno1, tekno2, tekno3, tekno4} = portofolio; 
-            return <motion.div 
-            variants={fadeIn('up',0.5)}
-            initial="hidden"
-            whileInView={'show'}
-            key={index} className="mt-20 flex flex-col lg:flex-row items-center justify-center bg-base-100 shadow-xl mx-20 rounded-2xl ">
-            <figure><img src={gambar} className="hover:scale-105 rounded-xl md:w-[50rem] lg:w-[150em] " alt="Album"/></figure>
-            <div className="card-body">
-                <div className="text-2xl font-semibold">{name}</div>
-                <p>{description}</p>
-                <div className='flex flex-col'>
-                    <div className='text-xl font-semibold pt-4'>Teknologi yang digunakan</div>
-                    <div className='flex flex-row'>
-                        <img className='w-14 h-14' src={tekno2} alt=""/>
-                        <img className='w-14 h-14' src={tekno1} alt=""/>
-                        <img className='pt-2 pl-2 w-14 h-14' src={tekno3} alt=""/>
-                        <img className='pt-2 pl-2 w-14 h-14' src={tekno4} alt=""/>
+    <>
+    <div className='flex bg-hero min-h-screen pt-40 flex-col bg-center bg-auto bg-repeat'>
+    <PageTi/>
+    <div className='flex flex-col lg:flex-row'>   
+        {portofolio.map((portofolio) => { 
+            const {name, link, gambar, tekno1, tekno2, tekno3} = portofolio; 
+            return  (
+            <a href={link} target="_blank" className="" rel="noreferrer">
+                <div className='group hover:-translate-y-4 ease-in-out transition-all duration-300 cursor-pointer relative animate-fadeIn '>  
+                    <motion.div 
+                    variants={fadeIn('up',0.5)}
+                    initial="hidden"
+                    whileInView={'show'}
+                    className="md:mt-10 lg:mt-20 flex flex-col items-center justify-center bg-base-100 shadow-xl mx-20 md:mx-40 lg:mx-16 rounded-2xl z-30">
+                    <div>
+                   <img src={gambar} className="rounded-xl md:w-[50rem] h-60 z-10" alt=""/>
                     </div>
+                    <div className="flex justify-between my-5">
+                        <div className='flex items-center flex-row justify-between gap-20'>
+                            <p className='font-semibold text-xl flex items-start'>{name}</p>
+                            <div className='flex flex-row gap-2'>
+                                <img className='w-14 h-14' src={tekno1} alt=""/>
+                                <img className='w-14 h-14' src={tekno2} alt=""/>
+                                <img className='w-14 h-14' src={tekno3} alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
                 </div>
-                <a href={link} target="_blank" className="card-actions justify-end" rel="noreferrer">
-                <button className="btn">Kunjungi</button>
-                </a>
-            </div>
-        </motion.div>
+            </a>)
         })}
     </div>
+    </div>
+    </>
   )
 }
 
