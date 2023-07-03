@@ -60,7 +60,7 @@ function Projek() {
                     whileInView={'show'}
                     className="md:mt-20 mt-20 lg:mt-20 flex flex-col items-center justify-center bg-base-100 shadow-xl mx-10  md:mx-40 lg:mx-6 rounded-2xl z-30">
                     <div>
-                   <img src={gambar} className="rounded-xl md:w-[50rem] h-60 z-10" alt=""/>
+                   <img src={gambar} className="rounded-xl md:w-[50rem] h-60 z-10"/>
                     </div>
                     <div className="flex justify-between my-5">
                         <div className='flex items-center flex-row justify-between gap-10'>
